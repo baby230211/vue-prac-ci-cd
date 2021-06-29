@@ -2,6 +2,7 @@
   <div class="hello">
     <h1 data-testId="currentCounter">當前點擊次數{{ count }}</h1>
     <button @click="increment">點擊加1</button>
+    <button @click="decrement">點擊減1</button>
   </div>
 </template>
 
@@ -16,6 +17,9 @@ export default {
   methods: {
     increment() {
       this.count += 1;
+    },
+    decrement() {
+      this.count -= 1;
     },
   },
 };
